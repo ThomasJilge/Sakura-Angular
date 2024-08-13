@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { landingPageComponent } from '../landingPage/landingPage.component';
 import { OurMenuComponent } from './our-menu/our-menu.component';
+import { HowToOrderComponent } from './how-to-order/how-to-order.component';
 
 @Component({
   selector: 'app-main-content',
@@ -9,7 +10,8 @@ import { OurMenuComponent } from './our-menu/our-menu.component';
   imports: [
     CommonModule,
     landingPageComponent,
-    OurMenuComponent
+    OurMenuComponent,
+    HowToOrderComponent
   ],
   templateUrl: './main-content.component.html',
   styleUrl: './main-content.component.scss'
