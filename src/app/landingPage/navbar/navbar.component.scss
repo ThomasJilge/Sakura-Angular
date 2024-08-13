@@ -1,8 +1,14 @@
 nav {
-    width: 100%;
-    padding: 32px;
+    // width: 100%;
+    // padding: 32px;
+    margin: 50px 100px 0px 100px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
     >img {
         width: 64px;
         height: 64px;
@@ -18,11 +24,38 @@ nav {
     }
 }
 
-a {
-    text-decoration: none;
-    color: white;
+
+
+.menuLinks {
+    margin-right: 100px;
+    >a {
+        text-decoration: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+    }
 }
 
 .phone_btn {
-    
+    display: flex;
+    align-items: center;
+    height: 30px;
+    background-color: rgb(170, 16, 16);
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 10px 15px;
+    &:hover {
+        background-color: red;
+        cursor: pointer;
+    }
+    >a {
+        text-decoration: none;
+        color: white;
+        margin-left: 5px;
+    }
+    >img {
+        width: 28px;
+        height: 28px;
+    }
 }
