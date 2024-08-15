@@ -3,6 +3,24 @@
     scroll-behavior: smooth;
 }
 
+$dark_red: rgb(170, 16, 16);
+
+@mixin borderStyling($bStyle) {
+  border: 2px $bStyle white;
+  border-radius: 10px;
+}
+
+@mixin fontColorStyling() {
+  color: white;
+}
+
+@mixin dFlex($jc: center, $ai: center, $g: 0px) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  gap: $g;
+}
+
 /* raleway-100 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */

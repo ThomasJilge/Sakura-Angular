@@ -1,10 +1,8 @@
+@import './../../../../styles.scss';
+
 nav {
-    // width: 100%;
-    // padding: 32px;
+    @include dFlex($jc: space-between);
     margin: 50px 100px 0px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     position: absolute;
     top: 0;
     right: 0;
@@ -15,7 +13,7 @@ nav {
     }
     >div {
         width: 350px;
-        display: flex;
+        @include dFlex($g: 16px);
         >a {
             &:hover {
                 color: red;
@@ -30,7 +28,7 @@ nav {
     margin-right: 100px;
     >a {
         text-decoration: none;
-        color: white;
+        @include fontColorStyling();
         display: flex;
         align-items: center;
         padding-right: 10px;
@@ -38,12 +36,11 @@ nav {
 }
 
 .phone_btn {
+    @include borderStyling(solid);
     display: flex;
     align-items: center;
     height: 30px;
-    background-color: rgb(170, 16, 16);
-    border: 2px solid white;
-    border-radius: 10px;
+    background-color: $dark_red;
     padding: 10px 15px;
     &:hover {
         background-color: red;
@@ -51,7 +48,7 @@ nav {
     }
     >a {
         text-decoration: none;
-        color: white;
+        @include fontColorStyling();
         margin-left: 5px;
     }
     >img {
